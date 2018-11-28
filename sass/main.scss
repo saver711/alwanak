@@ -1,0 +1,405 @@
+/*********************** Reset *********************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+
+}
+
+$primary-color: #488aff;
+$secondary-color: #ff0000;
+$text-color-dark: #094e5a;
+$text-color-light: #fff;
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'cairo', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    direction: rtl;
+    height: 4000px;
+    font-family: 'cairo', sans-serif;
+}
+
+a,
+a:active,
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+@mixin pcenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.go-contact {
+    background-color: $primary-color;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.social {
+
+
+    a {
+        font-size: 1.7rem;
+        transition: all .2s ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 1.2px;
+        }
+    }
+}
+
+.sec-padd {
+    padding: 6rem 0;
+}
+
+p {
+    color: $text-color-dark;
+    line-height: 1.7;
+}
+
+.gray-section {
+    background-color: #f7f4f4;
+}
+
+.mar-top-4 {
+    margin-top: 4rem;
+
+}
+
+p-0 {
+    padding: 0;
+}
+
+pr-0 {
+    padding-right: 0;
+
+}
+
+pl-0 {
+    padding-left: 0;
+}
+
+/******** S Header ********/
+.header {
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    &__video {
+        position: absolute;
+        width: 100%;
+        max-height: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .upper-nav {
+        color: $text-color-light;
+        padding: .8rem 0;
+
+        &__phone,
+        &__email,
+        &__wts {
+
+            i {
+                font-size: 1.6rem;
+                margin-right: 3px;
+            }
+
+            span {
+                display: inline-block;
+            }
+        }
+
+        &__info {
+            font-size: 1.6rem;
+        }
+
+        &__social {
+            font-size: 1.6rem;
+
+            a:not(:last-of-type) {
+                margin-right: 3px;
+            }
+
+        }
+
+        .end {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    .lower-nav {
+        color: $text-color-light;
+        margin: 1.4rem 0 0 0;
+
+        &__logo {
+
+            &-text {
+                font-size: 3rem;
+                font-family: 'Pattaya', sans-serif;
+                padding-left: 15px;
+            }
+        }
+
+        &__menu {
+            text-align: left;
+
+            i {
+                font-size: 3rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: 1rem;
+        right: 0;
+        width: 100%;
+
+        span {
+            display: inline-block;
+            color: $text-color-light;
+            font-size: 4rem;
+            font-weight: 100;
+            animation: arrow-down 1s ease-out infinite;
+            cursor: pointer;
+
+            &:hover {
+                animation: none;
+            }
+        }
+    }
+}
+
+@keyframes arrow-down {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-1rem);
+        opacity: .3;
+        color: $primary-color;
+    }
+}
+
+/******** E Header ********/
+
+/**********************S About**********************/
+.about {
+    font-size: 1.8rem;
+
+
+    .text {
+
+        p {
+            padding: 0 0 0 3rem;
+            text-align: justify;
+        }
+
+        &__down {
+            margin-top: 3rem;
+
+        }
+    }
+
+    .plane {
+        color: $text-color-dark;
+
+        &__item {
+            line-height: 1.7;
+
+            &:not(:last-of-type) {
+                margin-bottom: 1.3rem;
+            }
+        }
+    }
+
+    .under {
+        margin-top: 7rem;
+    }
+
+    .statics {
+
+        &__num {
+            color: $secondary-color;
+        }
+    }
+}
+
+/**********************E About**********************/
+
+/**********************S Services**********************/
+.services {
+
+    .service {
+        text-align: center;
+        padding: 3rem .8rem;
+        background-color: $text-color-light;
+        border-radius: 5px;
+        transition: all .4s ease;
+        box-shadow: 0 2px 12px 3px #d0cfcf;
+
+        &__icon {
+            i {
+                color: $primary-color;
+                font-size: 4.3rem;
+                transition: all .4s ease;
+            }
+        }
+
+        &__heading {
+            margin: 1rem 0 2rem;
+            transition: all -.1s ease;
+        }
+
+        &__text {
+            font-size: 1.6rem;
+            transition: all .4s ease;
+        }
+
+        &:hover {
+            box-shadow: none;
+            background: linear-gradient(to bottom left, $primary-color, $secondary-color);
+            color: $text-color-light;
+
+            i {
+                color: $text-color-light;
+            }
+
+            .service__text {
+                color: $text-color-light;
+            }
+        }
+    }
+}
+
+/**********************E Services**********************/
+
+/**********************S Work**********************/
+.work{
+    .project{
+        height: 33rem;
+        background-size: cover;
+            background-repeat: no-repeat;
+        
+        &__details{
+            text-align: center;
+            background-color: rgba(0,0,0,.5);
+            color: $text-color-light;
+        }
+        &__heading{
+            font-size: 2.1rem;
+            
+        }
+        &__link{
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 4rem;
+            
+            i{
+                font-size: 1.5rem;
+            }
+            p{
+                color: $text-color-light;
+                display: inline-block;
+                line-height: normal;
+            }
+            
+        }
+        
+        &.project1,&.project5{
+            background-image: url(../media/photos/work/project1.jpg);
+        }
+        
+        &.project2,&.project6{
+            background-image: url(../media/photos/work/project2.jpg);
+        }
+        
+        &.project3,&.project7{
+            background-image: url(../media/photos/work/project3.jpeg);
+        }
+        &.project4{
+            background-image: url(../media/photos/work/project4.jpeg);
+        }
+    }
+}
+/**********************E Work**********************/
+
+
+
+/************************************** S components ***********************************/
+
+/******** S Section-heading ********/
+.section-heading {
+    font-size: 4rem;
+    padding: 0 6rem;
+    line-height: 52px;
+    font-weight: bold;
+
+    span {
+        color: $primary-color;
+    }
+}
+
+/******** E Section-heading ********/
+
+.heading-text {
+    font-size: 1.9rem;
+    margin-top: 1rem;
+}
+
+
+/******** S Footer ********/
+
+/******** E Footer ********/
+
+/***************************************** E components ****************************/
+
+/********************** S Product-info **************************/
+
+/********************** E Product-info **************************/
+
+/********************** S About Us **************************/
+
+/********************** E About Us **************************/
+
+/********************** S Designers **************************/
+
+/********************** E Designers **************************/
+
+/********************** S Contacr Us **************************/
+
+/********************** E contact Us **************************/
