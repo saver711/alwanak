@@ -31,40 +31,40 @@
         <nav class="upper-nav">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="upper-nav__phone">
-                                        <span class="upper-nav__info">+20-1126183678</span>
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                       <i class="fa fa-phone" aria-hidden="true"></i>
+                                        <span class="upper-nav__info">01126183678</span>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4">
                                     <div class="upper-nav__email">
+                                       <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                         <span class="upper-nav__info">info@triangle.com</span>
-                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                     </div>
                                 </div>
 
                                 <div class="col-sm-4">
                                     <div class="upper-nav__wts">
-                                        <span class="upper-nav__info">+20-1126183678</span>
-                                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                       <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        <span class="upper-nav__info">01126183678</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="col-12 end">
                             <div class="upper-nav__social">
-                                <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+                                <a target="_blank" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a target="_blank" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a target="_blank" href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                                <a target="_blank" href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></i></a>
                             </div>
                         </div>
                     </div>
@@ -97,7 +97,7 @@
 
         <div class="arrow-down">
             <div class="container">
-                <span>&darr;</span>
+                <span onclick="scrollToElement('.about', 300)">&darr;</span>
             </div>
         </div>
     </header>
@@ -105,7 +105,7 @@
 
     <!-------------------------- S About  ----------------------------->
     <section class="about sec-padd">
-        <h2 class="section-heading">نحن<br><span>ألوانـــك</span></h2>
+        <h2 class="section-heading">نحن<span>ألوانـــك</span></h2>
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -153,16 +153,16 @@
     <!-------------------------- E About  ----------------------------->
 
     <!-------------------------- S Services  ----------------------------->
-    <div class="services sec-padd gray-section">
-        <h2 class="section-heading">تعرف على<br><span>خدماتــــــــــنا</span></h2>
+    <section class="services sec-padd gray-section">
+        <h2 class="section-heading">تعرف على<span>خدماتــــــــــنا</span></h2>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <p class="heading-text">إن المزيج المثالي بين العمليات الناضجة ، ونماذج التسليم المرنة ، والإدارة الفعالة للمشروعات ، والتقنية الواسعة ، وخبرة المجال ، تمكن من دعم الدورة الكاملة لتطوير تطبيقات البرمجيات.</p>
                 </div>
             </div>
-            
-            <div class="row mar-top-4">
+
+            <div class="row mar-top-4 align-items-center">
                 <div class="col-md-4">
                     <div class="service">
                         <div class="service__icon">
@@ -172,7 +172,7 @@
                         <p class="service__text">إن المزيج المثالي بين العمليات الناضجة ، ونماذج التسليم المرنة ، والإدارة الفعالة للمشروعات ، والتقنية الواسعة ، وخبرة المجال ، تمكن من دعم الدورة الكاملة لتطوير تطبيقات البرمجيات.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="service">
                         <div class="service__icon">
@@ -182,7 +182,7 @@
                         <p class="service__text">إن المزيج المثالي بين العمليات الناضجة ، ونماذج التسليم المرنة ، والإدارة الفعالة للمشروعات ، والتقنية الواسعة ، وخبرة المجال ، تمكن من دعم الدورة الكاملة لتطوير تطبيقات البرمجيات.</p>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="service">
                         <div class="service__icon">
@@ -194,125 +194,213 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-------------------------- E Services  ----------------------------->
-    
+
     <!-------------------------- S Work  ----------------------------->
-    <div class="work sec-padd">
-        <h2 class="section-heading">نماذج من<br><span>أعمالـــــــــنا</span></h2>
+    <section class="work sec-padd">
+        <h2 class="section-heading">نماذج من<span>أعمالـــــــــنا</span></h2>
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <p class="heading-text">نحن نساعد عملاءنا على النجاح بخلاف التوقعات.</p>
                 </div>
             </div>
-            
+
             <div class="row mar-top-4">
                 <div class="col-md-4">
                     <div class="project project1">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="project project2">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="project project3">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row mar-top-4">
                 <div class="col-12">
                     <div class="project project4">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row mar-top-4">
                 <div class="col-md-4">
                     <div class="project project5">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
                     <div class="project project6">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-4">
-                    <div class="project project">
+                    <div class="project project7">
                         <div class="project__details">
                             <h2 class="project__heading">اسم المشروع</h2>
-                            <a href="#" class="project__link">
-                                <i class="fa fa-external-link" aria-hidden="true"></i>
+                            <a target="_blank" href="#" class="project__link">
                                 <p>زيارة</p>
+                                <i class="fa fa-external-link" aria-hidden="true"></i>
+
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-            
-        </div>
-    </div>
-    <!-------------------------- E Work  ----------------------------->
-    
-    
 
+        </div>
+    </section>
+    <!-------------------------- E Work  ----------------------------->
+
+    <!-------------------------- S contact  ----------------------------->
+    <section class="contact sec-padd gray-section">
+        <h2 class="section-heading">اتصل<span>بنـــــــــا</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="heading-text">على مدار أكثر من 20 عامًا ، أنشأنا مواقع ويب وتطبيقات وبرامج عالية الأداء تقدم تجارب رقمية مثالية للخدمات المالية وشركات التأمين والمنظمات غير الربحية والوكالات الحكومية.</p>
+                </div>
+            </div>
+
+            <div class="row mar-top-4">
+                <div class="col-md-6">
+                    <div class="right">
+                        <form action="" class="form">
+                            <label for="name" class="form__label">الاسم بالكامل :</label>
+                            <input required type="text" id="name" class="form__input" name="name">
+
+                            <label for="email" class="form__label">البريد الالكترونى :</label>
+                            <input required type="email" id="email" class="form__input" name="email">
+
+                            <label for="phone" class="form__label">رقم الهاتف :</label>
+                            <input required type="text" id="phone" class="form__input" name="phone">
+
+                            <label for="more" class="form__label">التفاصيل :</label>
+                            <textarea name="more" id="more" class="form__textarea"></textarea>
+
+                            <div class="form__btns">
+                                <input type="submit" value="ارسال" name="send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="left">
+                        <div class="info">
+                            <div class="info__row">
+                                <i class="fa fa-phone info__icon" aria-hidden="true"></i>
+                                <p class="info__label">العنوان :</p>
+                                <p class="info__value">مصر - القاهرة</p>
+                            </div>
+
+                            <div class="info__row">
+                                <i class="fa fa-map-marker info__icon" aria-hidden="true"></i>
+                                <p class="info__label">الهاتف :</p>
+                                <p class="info__value">01126183678</p>
+                            </div>
+
+                            <div class="info__row">
+                                <i class="fa fa-envelope info__icon" aria-hidden="true"></i>
+                                <p class="info__label">البريد :</p>
+                                <p class="info__value">Ahwork711@gmail.com</p>
+                            </div>
+
+                            <div class="info__row social">
+                                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------- E contact  ----------------------------->
 
 
 
     <!-------------------------- S Footer  ----------------------------->
+    <footer class="footer mar-top-4">
+        <img src="media/photos/footer/footer-bg1.jpg" alt="">
+        <span class="footer__marker">
+        </span>
 
+        <div class="footer__info">
+            <div class="footer__copy">
+                <p>جميع الحقوق محفوظه <span>لألوانك&copy;</span></p>
+            </div>
+            <div class="footer__social social">
+                <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
     <!-------------------------- E Footer  ----------------------------->
 
 
     <!--Jquery -->
-    <script src=".js/jquery3.3.1.js"></script>
+    <script src="js/jquery3.3.1.js"></script>
 
     <!--BTS 4 -->
     <script src="js/bootstrap.min.js"></script>
