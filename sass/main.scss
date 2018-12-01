@@ -1,16 +1,18 @@
 /*********************** Reset *********************/
 
-* {
+*,
+*:after,
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
-    transition: all .4s ease;
+    transition: all .2s ease;
     flex-wrap: wrap;
 
 }
 
-$primary-color: #f05d23;
-$secondary-color: #f7aa00;
+$primary-color: #AE3C33;
+$secondary-color: #F46D03;
 $text-color-dark: #094e5a;
 $text-color-light: #fff;
 $card-box-shadow: 0 2px 12px 3px #d0cfcf;
@@ -115,7 +117,7 @@ pl-0 {
     padding-left: 0;
 }
 
-/******** S Header ********/
+/********************** S Header ***************************/
 .header {
     height: 100vh;
     position: relative;
@@ -171,21 +173,22 @@ pl-0 {
         }
 
         &__email {
-            display: flex;
-            justify-items: center;
+            i {
+                font-size: 1.4rem;
+            }
         }
     }
 
     .lower-nav {
         color: $text-color-light;
         margin: 1.4rem 0 0 0;
-        
-        &.whenScroll{
+
+        &.whenScroll {
             position: fixed;
             width: 100%;
             top: 0;
             left: 0;
-            background-color: rgba(0,0,0,.6);
+            background-color: rgba(0, 0, 0, .6);
             padding: 1rem 0;
             margin: 0;
         }
@@ -203,7 +206,7 @@ pl-0 {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            
+
             i {
                 font-size: 3rem;
                 cursor: pointer;
@@ -268,7 +271,90 @@ pl-0 {
     }
 }
 
-/******** E Header ********/
+/********************** E Header ***************************/
+
+/********************** S Navigatioin ***************************/
+
+.navigation {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 3;
+
+    &.open {
+        width: 250px;
+    }
+
+    top:0;
+    left: 0;
+    background-color: #333;
+    color: $text-color-light;
+    background: linear-gradient(to bottom, $secondary-color, $primary-color);
+
+    &__icon {
+        position: absolute;
+        display: inline-block;
+        right: 1.5rem;
+        top: 1.5rem;
+        z-index: 4;
+        color: $text-color-light;
+        font-size: 1.7rem;
+        cursor: pointer;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5rem 0 1rem;
+    }
+
+    &__item {
+        cursor: pointer;
+        display: inline-block;
+        font-size: 1.8rem;
+        transition: all .2s ease;
+        height: 4rem;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            display: inline-block;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            right: -17px;
+            transform: skewX(-40deg);
+            background-color: $primary-color;
+            z-index: -1;
+            transition: all .4s ease-out;
+        }
+
+        &:hover {
+            &::before {
+                width: 114%;
+            }
+        }
+
+        &.active {
+            &::before {
+                width: 114%;
+            }
+        }
+    }
+
+    &__link {}
+}
+
+@media (max-width: 270px) {
+    .navigation.open {
+        width: 100%;
+    }
+}
+
+/********************** E Navigatioin ***************************/
 
 /**********************S About**********************/
 .about {
@@ -698,10 +784,11 @@ pl-0 {
         }
     }
 }
+
 @media (max-width: 344px) {
-    .footer{
-        &__copy{
-            p{
+    .footer {
+        &__copy {
+            p {
                 font-size: 1rem;
             }
         }

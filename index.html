@@ -20,10 +20,10 @@
 
 <body>
     <!-------------------------- S Header  ----------------------------->
-    <header class="header">
+    <header id="header" class="header">
         <video class="header__video" autoplay muted loop>
             <source src="media/videos/triangle.mp4">
-            <source src="media/videos/triangle.ogv">
+            <source src="media/videos/triangle.mkv">
             <source src="media/videos/triangle.webm">
         </video>
 
@@ -41,10 +41,10 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-4">
+                                <div class="col-sm-4 p-0">
                                     <div class="upper-nav__email">
                                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                        <span class="upper-nav__info">info@triangle.com</span>
+                                        <span class="upper-nav__info">info@alwanak.com</span>
                                     </div>
                                 </div>
 
@@ -85,7 +85,7 @@
                                 </div>
 
                                 <div class="col-6 lower-nav__menu">
-                                    <i class="fa fa-align-left" aria-hidden="true"></i>
+                                    <i class="fa fa-align-left lower-nav__icon" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </div>
@@ -97,14 +97,41 @@
 
         <div class="arrow-down">
             <div class="container">
-                <span onclick="scrollToElement('.about', 300)">&darr;</span>
+                <span onclick="scrollToElement('.about', 180)">&darr;</span>
             </div>
         </div>
     </header>
     <!-------------------------- E Header  ----------------------------->
+    
+    <!-------------------------- S Navigation  ----------------------------->
+    <nav class="navigation">
+        <i class="fa fa-times navigation__icon" aria-hidden="true"></i>
+        <ul class="navigation__list">
+            <li data-scroll="header" class="navigation__item active" onclick="scrollToElement('.header', 220)">
+                <a href="#" class="navigation__link">الرئيسية</a>
+            </li>
+            
+            <li data-scroll="about" class="navigation__item" onclick="scrollToElement('.about', 180)">
+                <a href="#" class="navigation__link">من نحن</a>
+            </li>
+            
+            <li data-scroll="services" class="navigation__item" onclick="scrollToElement('.services', 240)">
+                <a href="#" class="navigation__link">خدماتنا</a>
+            </li>
+            
+            <li data-scroll="work" class="navigation__item" onclick="scrollToElement('.work', 300)">
+                <a href="#" class="navigation__link">المعرض</a>
+            </li>
+            
+            <li data-scroll="contact" class="navigation__item" onclick="scrollToElement('.contact', 340)">
+                <a href="#" class="navigation__link">اتصل بنا</a>
+            </li>
+        </ul>
+    </nav>
+    <!-------------------------- E Navigation  ----------------------------->
 
     <!-------------------------- S About  ----------------------------->
-    <section class="about sec-padd">
+    <section id="about" class="about sec-padd">
         <h2 class="section-heading">نحن<span>ألوانـــك</span></h2>
         <div class="container">
             <div class="row">
@@ -153,7 +180,7 @@
     <!-------------------------- E About  ----------------------------->
 
     <!-------------------------- S Services  ----------------------------->
-    <section class="services sec-padd gray-section">
+    <section id="services" class="services sec-padd gray-section">
         <h2 class="section-heading">تعرف على<span>خدماتــــــــــنا</span></h2>
         <div class="container">
             <div class="row">
@@ -198,7 +225,7 @@
     <!-------------------------- E Services  ----------------------------->
 
     <!-------------------------- S Work  ----------------------------->
-    <section class="work sec-padd">
+    <section id="work" class="work sec-padd">
         <h2 class="section-heading">نماذج من<span>أعمالـــــــــنا</span></h2>
         <div class="container">
             <div class="row">
@@ -309,7 +336,7 @@
     <!-------------------------- E Work  ----------------------------->
 
     <!-------------------------- S contact  ----------------------------->
-    <section class="contact sec-padd gray-section">
+    <section id="contact" class="contact sec-padd gray-section">
         <h2 class="section-heading">اتصل<span>بنـــــــــا</span></h2>
         <div class="container">
             <div class="row">
@@ -379,7 +406,7 @@
 
 
     <!-------------------------- S Footer  ----------------------------->
-    <footer class="footer mar-top-4">
+    <footer class="footer">
         <img src="media/photos/footer/footer-bg1.jpg" alt="">
         <span class="footer__marker">
         </span>
